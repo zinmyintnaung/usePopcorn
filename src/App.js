@@ -263,7 +263,7 @@ function MovieDetails({ selectedId, onMovieClose, onAddWatched, watched }) {
                 try {
                     setIsLoading(true);
                     const res = await fetch(
-                        `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`,
+                        `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`,
                         { signal: controller.signal }
                     );
                     if (!res.ok) {
